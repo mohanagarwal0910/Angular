@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'BindingTechnique' title`, () => {
+  it(`should have the 'EventBindingTechnique' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('BindingTechnique');
+    expect(app.title).toEqual('EventBindingTechnique');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, BindingTechnique');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, EventBindingTechnique');
   });
 });
