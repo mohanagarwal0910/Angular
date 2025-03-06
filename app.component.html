@@ -4,8 +4,8 @@
   <img [src]="imgUrl" (click)="onClick($event)" alt="">
 </div>
 <div>
- 
-  <input [(ngModel)]="userName"/>
+  <input (input)="onInput($event)" [(ngModel)]="userName"/>
+  <span class="error-output">{{this.nameError}}</span>
   <br/><br/>
 </div>
 <router-outlet></router-outlet>
